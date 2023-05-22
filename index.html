@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./Imagenes/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Challenge Incriptador</title>
+</head>
+<body>
+    <header>
+        <h1>Challenge Incriptador</h1>
+    </header>
+    <main>
+        
+
+        <section class="texto">
+
+            <textarea class="areaPrincipal" cols="65" rows="15" placeholder="Inserte texto aquí:" autofocus></textarea>
+            <h6 class="warning">Solo letras minúsculas y sin acentos</h6>
+
+
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+
+            </div>
+           
+        </section>
+
+        <section>
+
+            <textarea cols="40" rows="15" class="mnsj" placeholder="¡El texto encriptado aparecera aquí!"></textarea>
+            <button class="copiar"onclick="copiar(mnsj)">Copiar</button>
+        </section>
+
+       
+    </main>
+    <footer>
+        <p class="textoPie">Página desarrollada por Sebastián Galván</p>
+        <ul>
+            <li> <a href="https://github.com/Galvan1017" target="_blank" ><img src="./Imagenes/github-mark.png" alt="GitHub" width="50px" height="50px"></a></li>
+            <li><a href="https://www.linkedin.com/in/sebastian-galvan-05357b225/" target="_blank"><img src="./Imagenes/linkedinlogo.png" alt="Logo linkedin" width="50px" height="50px"></a></li>
+        </ul>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

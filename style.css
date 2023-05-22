@@ -1,0 +1,251 @@
+/*Color rojo; E7473C
+    Color blanco:F0F0F0*/
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F0F0F0;
+    
+}
+header{
+    color: #E7473C;
+    text-align: center;
+    
+    
+}
+main{
+    display: flex;
+    margin: 0px 0px 50px 80px;
+}
+
+
+
+.areaPrincipal{
+    border: none;
+    background-color: #E7473C;
+    color: #F0F0F0;
+    border-radius: 24px;
+    padding: 15px 0 0 15px;
+    font-size: 20px;
+
+}
+.areaPrincipal::placeholder{
+    color: #F0F0F0;
+    font-size: 20px;
+    text-transform: initial;
+}
+
+.areaPrincipal:focus{
+    outline:none ;
+}
+
+
+
+.mnsj{
+    background-color: #F0F0F0;
+    color: #E7473C;
+    border-radius: 24px;
+    margin-left: 24px;
+    padding: 15px 0 0 15px;
+    font-size: 20px;
+}
+
+.mnsj::placeholder{
+    padding: 30%;
+    color: #E7473C;
+}
+.warning::before{
+    content: url(./Imagenes/simbolowarning.png);
+    padding-right: 5px;
+    vertical-align: middle;
+
+}
+.warning{
+    color: #E7473C;
+    font-size: 15px;
+    
+}
+.botones{
+    display: flex;
+}
+
+.btn-encriptar{
+    border: none;
+    background-color: #E7473C;
+    color: #F0F0F0;
+    font-size: 15px;
+    border-radius: 24px;
+    
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    transition: .5s all;
+}
+
+.btn-encriptar:hover{
+    transform:scale(1.2) ;
+}
+
+.btn-desencriptar{
+    background-color: #F0F0F0;
+    color: #E7473C;
+    margin-left: 40px;
+    font-size: 15px;
+    border-radius: 24px;
+    height: 67px;
+    width: 328px;
+    cursor: pointer;
+    transition: .5s all;
+}
+
+
+.btn-desencriptar:hover{
+    transform:scale(1.2) ;
+}
+
+.copiar{
+    background-color: #E7473C;
+    border: none;
+    border-radius: 24px;
+    font-size: 15px;
+    color: #F0F0F0;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 85px;
+    width: 328px;
+    transition: .5s all;
+
+}
+.copiar:hover{
+    transform: scale(1.2);
+}
+
+footer{
+    margin-top:  140px; 
+    text-align: center;
+    background-color: #E7473C;
+}
+.textoPie{
+    background-color: #E7473C;
+    color: #F0F0F0;
+}
+footer ul{
+    background-color: #E7473C;
+    height: 80px;
+}
+footer li{
+    display: inline
+    
+}
+footer li:last-child{
+    margin-left: 20px;
+}
+
+
+/*Media Querys*/
+
+@media screen and (min-width:280px) and  (max-width:450px){ /*Celulares*/
+    main{
+        margin-left: 2px;
+        display: block;
+    }
+    
+    .areaPrincipal,.mnsj{
+        width: 95%;
+        height: 80%;
+        font-size: 12px;
+        
+        
+    }
+    .areaPrincipal::placeholder{
+        
+        font-size: 12px;
+        
+    }
+    .botones{
+        width: 100%;
+        display: block;
+    }
+    .mnsj::placeholder{
+        font-size: 12px;
+    }
+    .btn-desencriptar,.btn-encriptar{
+         
+        width: 100%;
+        margin:0 0 10px 0;
+    }
+   
+   .mnsj{
+    margin-left: 0%;
+   }
+   .copiar{
+    display: block;
+    width: 100%;
+    margin:10px 0 10px 0;
+   }
+
+   .btn-desencriptar:hover,.btn-encriptar:hover,.copiar:hover{
+    transform: scale(1.02);
+   }
+}
+
+
+@media screen and (min-width:700px) and  (max-width:1280px){ /*TABLETAS*/
+    main{
+        margin-left: 2px;
+        display: block;
+    }
+    
+    .areaPrincipal,.mnsj{
+        width: 95%;
+        height: 80%;
+        font-size: 30px;
+        
+        
+    }
+    .warning{
+       
+        font-size: 30px;
+    }
+    
+    .areaPrincipal::placeholder{
+        
+        font-size: 30px;
+        
+    }
+    
+    .botones{
+        width: 50%;
+        display: block;
+    }
+
+    .btn-desencriptar,.btn-encriptar{
+        height: 100px;
+        font-size: 30px;
+        width: 100%;
+        margin:0 0 10% 45%;
+
+    }
+   
+   .mnsj{
+    margin-left: 0%;
+   }
+   .copiar{
+    display: block;
+    height: 100px;
+    width: 50%;
+    font-size: 30px;
+    margin:10% 0 10% 25%;
+   }
+
+   .btn-desencriptar:hover,.btn-encriptar:hover,.copiar:hover{
+    transform: scale(1.2);
+   }
+   .textoPie{
+    padding-top: 50px ;
+    font-size: 30px;
+    height: 50px;
+           
+   }
+   
+}
